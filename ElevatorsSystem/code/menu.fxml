@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" styleClass="CustomBorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="300.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="45.0" layoutY="100.0" prefHeight="25.0" prefWidth="155.0" text="Number of elevators">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="45.0" layoutY="130.0" prefHeight="25.0" prefWidth="149.0" text="Number of floors">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="45.0" layoutY="160.0" prefHeight="25.0" prefWidth="154.0" text="Number of people ">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="81.0" layoutY="52.0" prefHeight="30.0" prefWidth="138.0" text="Select options:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="144.0" prefWidth="147.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="fxElevatorsText" alignment="CENTER" layoutX="55.0" layoutY="102.0" prefHeight="25.0" prefWidth="45.0" text="3" />
+            <TextField fx:id="fxFloorsText" alignment="CENTER" layoutX="55.0" layoutY="132.0" prefHeight="25.0" prefWidth="45.0" text="9" />
+            <TextField fx:id="fxPeopleText" alignment="CENTER" layoutX="55.0" layoutY="162.0" prefHeight="25.0" prefWidth="45.0" text="5" />
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <Pane prefHeight="109.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="fxConfigButton" layoutX="99.0" layoutY="14.0" mnemonicParsing="false" onAction="#click" styleClass="CustomButton" text="Configure" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

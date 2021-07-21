@@ -31,12 +31,12 @@ public class Complex {
 
     public String getAlgebraicForm() {
         if (this.imaginary >= 0f)
-            if (this.imaginary != 0.0)
+            if (this.imaginary != 0.0)  //please use {} for if statements
                 return String.format("%.02f + %.02f*i", this.real, this.imaginary);
             else
                 return String.format("%.02f", this.real);
         else
-            if (this.imaginary != 0.0)
+            if (this.imaginary != 0.0)   //nevewr compare double variables against strict equality
                 return String.format("%.02f - %.02f*i", this.real, -this.imaginary);
             else
                 return String.format("%.02f", this.real);
